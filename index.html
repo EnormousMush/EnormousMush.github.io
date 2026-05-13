@@ -3,47 +3,185 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Frank Du</title>
+    <title>Runbao (Frank) Du</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@300;400&display=swap" rel="stylesheet">
 </head>
 <body>
+    <nav class="topbar">
+        <div class="topbar-inner">
+            <a href="#about" class="logo">durunbao.com</a>
+            <ul class="nav-links">
+                <li><a href="#about">about</a></li>
+                <li><a href="#research">research</a></li>
+                <li><a href="#build">build</a></li>
+                <li><a href="#music">music</a></li>
+                <li><a href="#design">design</a></li>
+                <li><a href="#whatnot">whatnot</a></li>
+            </ul>
+        </div>
+    </nav>
+
     <main>
-        <header>
-            <h1>Frank [Last Name]</h1>
-            <p class="affiliation">Undergraduate, University of Chicago<br>
-            Computational and Applied Mathematics</p>
-        </header>
-
-        <section>
-            <p>I'm an undergraduate at UChicago studying CAM with a minor in astrophysics. My research interests are at the intersection of machine learning, audio signal processing, and value-based reasoning in large language models.</p>
-            <p>I'm currently a researcher at the <a href="https://supergroup.cs.uchicago.edu/">SUPERGroup Lab</a> with Professor Blase Ur, where I study value-based reasoning in LLMs. I'm also writing an honors thesis on detecting artifacts and deepfake signatures in AI-generated music.</p>
-            <p>Email: <a href="mailto:you@uchicago.edu">you@uchicago.edu</a></p>
+        <!-- ABOUT -->
+        <section id="about" class="section">
+            <div class="hero-row">
+                <div class="hero-name">
+                    <div class="chinese-name">杜润宝</div>
+                    <h1 class="english-name">Runbao (Frank) Du</h1>
+                </div>
+                <div class="hero-photo">
+                    <img src="me.jpg" alt="Frank Du">
+                </div>
+            </div>
+        
+            <div class="about-text">
+                <p>I am a 3rd-year undergrad studying Computational and Applied Mathematics (CAAM) with a minor in Astronomy and Astrophysics at the University of Chicago. My main interest lies in AI applications and the intersections of ethics, security, and music / audio analysis.</p>
+                <p>I enjoy making music, writing poems, and sometimes typing competitively. I also enjoy bouldering, working out, playing ultimate, and, on rare occasions, running 400m. I love making plans — I make too many plans for everything in my life and they are probably hindering my productivity. I enjoy thinking about big topics and vague problems and pretending to have solutions for them even though I don't even have a solution to the second question on my math homework.</p>
+                <p>I am always looking for new opportunities and collaborations.</p>
+                <p class="contact-line">
+                    <span class="label">Email</span> &nbsp;runbao (at) uchicago (dot) edu<br>
+                    <span class="label">CV</span> &nbsp;<a href="cv.pdf" target="_blank" rel="noopener noreferrer">download (pdf)</a>
+                </p>
+            </div>
         </section>
 
-        <hr>
+        <!-- RESEARCH -->
+        <section id="research" class="section">
+            <h2 class="section-heading">Research</h2>
 
-        <section>
-            <h2>Research</h2>
-            <p>Brief descriptions or a list of projects go here.</p>
+            <div class="item">
+                <h3 class="item-title">SUPERGroup LLM Research <span class="item-date">ongoing</span></h3>
+                <p>Working with a team at the SUPERGroup Lab under Professor Blase Ur to explore value-based reasoning in large language models.</p>
+            </div>
+
+            <div class="item">
+                <h3 class="item-title">Independent Research <span class="item-date">ongoing</span></h3>
+                <p>Building a deepfake detector for AI-generated music. Supervised by Prof. Blase Ur.</p>
+            </div>
+
+            <div class="item">
+                <h3 class="item-title">UChicago Directed Reading Program <span class="item-date">2025–2026</span></h3>
+                <p>Learned fundamental concepts in algebraic geometry and applied them to study elliptic curves, using Silverman's <em>The Arithmetic of Elliptic Curves</em> as the main textbook. The ultimate goal is to understand and reproduce the proof of the elliptic curve primality test.</p>
+            </div>
         </section>
 
-        <hr>
+        <!-- BUILD -->
+        <section id="build" class="section">
+            <h2 class="section-heading">Build</h2>
 
-        <section>
-            <h2>Projects</h2>
-            <p>Lyra, Seeing Music, etc.</p>
+            <div class="item">
+                <h3 class="item-title">Prezuricle — Multimodal Marketing Platform <span class="item-date">2023–2024</span></h3>
+                <p>Co-created with <a href="https://www.linkedin.com/in/%E5%90%AF%E6%B7%B3-%E8%B5%B5-46800621a/" target="_blank" rel="noopener noreferrer">Jason Zhao</a> (USC '27). An AI-driven platform covering multimedia conversions like text-to-speech and text-to-image, with the main services being AI-centric marketing tools.</p>
+                <p><a href="https://prezuricle.com" target="_blank" rel="noopener noreferrer" class="external">prezuricle.com →</a></p>
+            </div>
+
+            <div class="item placeholder">
+                <h3 class="item-title">Lyra <span class="item-date">tba</span></h3>
+                <p class="muted">Coming soon.</p>
+            </div>
+
+            <div class="item placeholder">
+                <h3 class="item-title">Seeing Music <span class="item-date">tba</span></h3>
+                <p class="muted">Coming soon.</p>
+            </div>
         </section>
 
-        <hr>
+        <!-- MUSIC -->
+        <section id="music" class="section">
+            <h2 class="section-heading">Music</h2>
 
-        <section>
-            <h2>Elsewhere</h2>
-            <p>
-                <a href="https://github.com/EnormousMush">GitHub</a> &middot;
-                <a href="https://ch.tetr.io/u/mushroomdaddy123">Tetr.io</a> &middot;
-                <a href="https://monkeytype.com/profile/Runbao">MonkeyType</a>
+            <div id="stl-viewer"></div>
+
+            <div class="music-grid">
+                <div class="sc-player"><iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/frand-48991633/starboy&color=%238b8f97&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true"></iframe></div>
+                <div class="sc-player"><iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/frand-48991633/so-cale-tape-ep3&color=%238b8f97&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true"></iframe></div>
+                <div class="sc-player"><iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/frand-48991633/back-to-you&color=%238b8f97&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true"></iframe></div>
+                <div class="sc-player"><iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/frand-48991633/bad-habits&color=%238b8f97&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true"></iframe></div>
+            </div>
+
+            <p class="link-row">
+                <a href="https://soundcloud.com/frand-48991633" target="_blank" rel="noopener noreferrer" class="external">SoundCloud →</a>
+                <a href="https://163cn.tv/0ukNXIT" target="_blank" rel="noopener noreferrer" class="external">NetEase Music →</a>
             </p>
         </section>
+
+        <!-- DESIGN -->
+        <section id="design" class="section">
+            <h2 class="section-heading">Design</h2>
+            <p>A portfolio of graphic design work — layouts, posters, and visual experiments.</p>
+            <p><a href="https://heyzine.com/flip-book/9742bc589a.html" target="_blank" rel="noopener noreferrer" class="external">View portfolio →</a></p>
+        </section>
+
+        <!-- WHATNOT -->
+        <section id="whatnot" class="section">
+            <h2 class="section-heading">Whatnot</h2>
+
+            <div class="link-list">
+                <a href="https://ch.tetr.io/u/mushroomdaddy123" target="_blank" rel="noopener noreferrer">Tetr.io</a>
+                <a href="https://monkeytype.com/profile/Runbao" target="_blank" rel="noopener noreferrer">MonkeyType</a>
+                <a href="https://www.runbaos.com/" target="_blank" rel="noopener noreferrer">My Poems</a>
+            </div>
+
+            <div class="subsection">
+                <h3 class="sub-heading">What keeps me up at night</h3>
+                <ol class="questions">
+                    <li>Do emotions have a lifespan? Why do some emotions last longer while others last for a split second?</li>
+                    <li>Will there ever be a perfect debate? Perfect in terms of having absolute consensus upon definitions.</li>
+                    <li>Will there ever be an absolute, independent thinker who has all their thoughts generated by themselves?</li>
+                    <li>How do you defeat a man who knows everything, at any time?</li>
+                    <li>Will there ever be a scenario in which all of mankind stands on the same side of an argument?</li>
+                    <li>Is there a threshold to the level of impact that forces us to begin weighing the pros and cons?</li>
+                    <li>Is it possible to explain a very challenging academic topic without using the terms and logic of that field? If so, would anything be lost?</li>
+                    <li>Is there a threshold that separates what is truly humanly impossible from what is extremely challenging but still achievable?</li>
+                </ol>
+            </div>
+
+            <div class="subsection">
+                <h3 class="sub-heading">Animal names I use to plan the sh*t out of everything</h3>
+                <p>I started experimenting with making plans and time management since grade 8 (or maybe 9 — I can't remember). I wrote a book about the planning techniques I used to survive high school, which nobody cared about or read.</p>
+                <p>I realized that the most important aspect of a good plan is to be flexible and multidirectional. A good plan should incorporate things that you want and don't want to do, but it should be so flexible that you are not restricted. The plan should not be guiding you. You should be guiding the plan.</p>
+
+                <div class="animal-grid">
+                    <div class="animal-block elephant" data-animal="elephant">Elephant</div>
+                    <div class="animal-block beaver" data-animal="beaver">Beaver</div>
+                    <div class="animal-block owl" data-animal="owl">Owl</div>
+                    <div class="animal-block dolphin" data-animal="dolphin">Dolphin</div>
+                    <div class="animal-block bookworm" data-animal="bookworm">Bookworm</div>
+                    <div class="animal-block bees" data-animal="bees">Bees</div>
+                </div>
+
+                <p>I tend to use these animal categories with the following rules:</p>
+                <ol class="rules">
+                    <li>I should be completing at least 3 animals a day.</li>
+                    <li>I should be prioritizing these animals at the start of each day so I have a general sense of what's more pressing, but rule 1 still applies.</li>
+                    <li>Some animals may take longer than the rest, and that's fine.</li>
+                    <li>Some tasks may fall under multiple animals. That's fine — completing that task counts towards completing multiple animals.</li>
+                    <li>If a task does not fall under any of these categories, it is not a task.</li>
+                </ol>
+            </div>
+        </section>
+
+        <footer>
+            <p>© Runbao Du · built with HTML &amp; CSS · hosted on GitHub Pages</p>
+        </footer>
     </main>
+
+    <!-- Popup overlay for animal blocks -->
+    <div class="popup-overlay" id="popupOverlay">
+        <div class="popup-content">
+            <span class="popup-close">&times;</span>
+            <h2 class="popup-title" id="popupTitle"></h2>
+            <p class="popup-description" id="popupDescription"></p>
+        </div>
+    </div>
+
+    <!-- Three.js for STL viewer -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/STLLoader.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
