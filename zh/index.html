@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Runbao (Frank) Du</title>
+    <meta name="description" content="Runbao (Frank) Du — undergraduate at UChicago studying CAAM. AI applications, music, and more.">
+    <meta property="og:title" content="Runbao (Frank) Du">
+    <meta property="og:description" content="UChicago undergrad. AI applications, music, design, and whatnot.">
+    <meta property="og:image" content="https://durunbao.com/me.jpg">
+    <meta property="og:url" content="https://durunbao.com/zh/">
+    <link rel="icon" href="../favi.jpg" type="image/jpeg">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@300;400&family=Noto+Serif+SC:wght@400;500;600&family=Noto+Sans+SC:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body class="zh">
+    <nav class="topbar">
+        <div class="topbar-inner">
+            <a href="#about" class="logo">durunbao.com</a>
+            <ul class="nav-links">
+                <li><a href="#about">关于我</a></li>
+                <li><a href="#research">科研</a></li>
+                <li><a href="#build">项目</a></li>
+                <li><a href="#music">音乐制作</a></li>
+                <li><a href="#whatnot">其他</a></li>
+                <li class="lang-toggle">
+                    <a href="/" class="lang">EN</a>
+                    <span class="lang-divider">/</span>
+                    <a href="/zh/" class="lang active">中文</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <!-- 关于我 -->
+        <section id="about" class="section">
+            <div class="hero-row">
+                <div class="hero-name">
+                    <div class="chinese-name">杜润宝</div>
+                    <h1 class="english-name">Runbao (Frank) Du</h1>
+                </div>
+                <div class="hero-photo">
+                    <img src="../me.jpg" alt="Frank Du">
+                </div>
+            </div>
+
+            <div class="about-text">
+                <p>我是一名在芝加哥大学的大三学生。我主修 Computational and Applied Mathematics，并辅修天体物理。我对 AI 应用非常感兴趣，特别是 AI 在音乐，音频分析和安全上的应用，以及 AI 在哲学中的参与。我在平时喜欢制作音乐，写诗，并且练习打字速度（现在没有之前那么痴迷了）。我喜欢抱石，丢飞盘，偶尔跑步。我热爱做计划。我喜欢计划自己生活中的所有事情。从某种程度上来说，我觉得我的计划多到已经开始减弱我的效率（真的）。我喜欢思考庞大的问题，想象极其宏大的理想，并假装自己有答案。但我连这周的数学作业都不会做。</p>
+                <p>如果你有任何问题或想法，欢迎联系我！</p>
+                <p class="contact-line">
+                    <span class="label">邮箱</span> &nbsp;runbao (at) uchicago (dot) edu<br>
+                    <a href="../cv-zh.pdf" target="_blank" rel="noopener noreferrer"><span class="label">个人简历</span></a>
+                </p>
+            </div>
+        </section>
+
+        <!-- 科研 -->
+        <section id="research" class="section">
+            <h2 class="section-heading">科研</h2>
+
+            <div class="item">
+                <h3 class="item-title">大语言模型的价值推理 <span class="item-date">正在进行</span></h3>
+                <p>参与 SUPERGroup 实验室的有关大语言模型的价值推理体系的研究。</p>
+            </div>
+
+            <div class="item">
+                <h3 class="item-title">有关 AI 生成音乐的独立科研 <span class="item-date">正在进行</span></h3>
+                <p>探索并寻找 AI 生成音乐中独有的信息特征。导师：<a href="https://www.blaseur.com/" target="_blank" rel="noopener noreferrer">Prof. Blase Ur</a>。</p>
+                <p><a href="../proposal1.pdf" target="_blank" rel="noopener noreferrer" class="external">项目提案 →</a></p>
+            </div>
+
+            <div class="item">
+                <h3 class="item-title">芝加哥大学数学导读项目 <span class="item-date">2025–2026</span></h3>
+                <p>学习代数几何以及其中有关椭圆曲线的内容。使用 Silverman 所著的 <em>The Arithmetic of Elliptic Curves</em> 作为主要教材。这个项目的最终目标是理解椭圆素性测试的算法及证明。</p>
+                <p><a href="../drp.pdf" target="_blank" rel="noopener noreferrer" class="external">报告幻灯片 →</a></p>
+            </div>
+        </section>
+
+        <!-- 项目 -->
+        <section id="build" class="section">
+            <h2 class="section-heading">项目</h2>
+
+            <div class="item">
+                <h3 class="item-title">Lyra <span class="item-date">正在进行</span></h3>
+                <p>独立搭建并上线 AI 音乐平台：用户上传歌曲后可与大模型对话，系统通过自研 Python 音频分析 Pipeline 提取特征，并由 Claude 调用 Google Gemini 图像模型实时生成可视化场景。</p>
+                <p style="font-family: 'JetBrains Mono', monospace; font-size: 13px; font-weight: 300;">如想尝试初代版本，请联系润宝。</p>
+            </div>
+
+            <div class="item">
+                <h3 class="item-title">Prezuricle — 市场宣传工具 <span class="item-date">2023–2024</span></h3>
+                <p>与 <a href="https://www.linkedin.com/in/%E5%90%AF%E6%B7%B3-%E8%B5%B5-46800621a/" target="_blank" rel="noopener noreferrer">Jason Zhao</a> (USC '27) 共同搭建一个调用多模型 API 的多模态工具，主要负责文字与音频、文字与图像等之间的转换。平台的主要目的是辅助公司在市场传播上的需求。</p>
+                <p><a href="https://prezuricle.com" target="_blank" rel="noopener noreferrer" class="external">prezuricle.com →</a></p>
+            </div>
+        </section>
+
+        <!-- 音乐制作 -->
+        <section id="music" class="section">
+            <h2 class="section-heading">音乐制作</h2>
+
+            <div id="stl-viewer"></div>
+
+            <div class="music-grid">
+                <div class="sc-player"><iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/frand-48991633/starboy&color=%238b8f97&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true"></iframe></div>
+                <div class="sc-player"><iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/frand-48991633/so-cale-tape-ep3&color=%238b8f97&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true"></iframe></div>
+                <div class="sc-player"><iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/frand-48991633/back-to-you&color=%238b8f97&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true"></iframe></div>
+                <div class="sc-player"><iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/frand-48991633/bad-habits&color=%238b8f97&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true"></iframe></div>
+            </div>
+
+            <p class="link-row">
+                <a href="https://163cn.tv/0ukNXIT" target="_blank" rel="noopener noreferrer" class="external">网易云音乐账号 →</a>
+            </p>
+            <p class="muted">专辑正在制作中，计划于 2026 年 12 月上线。</p>
+        </section>
+
+        <!-- 其他 -->
+        <section id="whatnot" class="section">
+            <h2 class="section-heading">其他</h2>
+
+            <div class="link-list">
+                <a href="https://ch.tetr.io/u/mushroomdaddy123" target="_blank" rel="noopener noreferrer">Tetr.io</a>
+                <a href="https://monkeytype.com/profile/Runbao" target="_blank" rel="noopener noreferrer">MonkeyType</a>
+                <a href="https://www.runbaos.com/" target="_blank" rel="noopener noreferrer">我的诗</a>
+                <a href="../portfolio.pdf" target="_blank" rel="noopener noreferrer" style="margin-top: 28px;">个人视觉作品集</a>
+            </div>
+
+            <div class="subsection">
+                <h3 class="sub-heading">失眠中</h3>
+                <ol class="questions">
+                    <li>情绪有寿命吗？为什么有些情绪持续很久，而有些只是一瞬间？</li>
+                    <li>我们会见证一场完美的辩论吗？完美指的是对所有定义都达成绝对共识。</li>
+                    <li>世界上是否存在一个绝对独立的思考者？一名绝对独立的思考者是一位所有思想的产生都完全源于自己的思考者。</li>
+                    <li>如何击败一个在任何时候都无所不知的人？</li>
+                    <li>会有全人类在同一个问题上站在同一立场的情况吗？</li>
+                    <li>是否存在一个影响程度的临界点，迫使我们开始权衡利弊？</li>
+                    <li>是否可能在不使用某个领域的术语和逻辑的情况下解释一个非常艰深的学术话题？如果可以，这则信息的传输过程中会失去什么吗？</li>
+                    <li>是否存在一个界限，将真正人类不可能做到的事与极其困难但仍可实现的事区分开来？</li>
+                </ol>
+            </div>
+
+            <div class="subsection">
+                <h3 class="sub-heading">我用来计划一切的动物命名法</h3>
+                <p>我从初二（或者初三，我记不清了）开始尝试制定计划，并练习自己的时间管理技能。我写过一本关于时间管理的书，但没人读过（除了我）。</p>
+                <p>我认为一个好的计划最重要的特质是灵活和多向性。一个好的计划应该包含你想做和不想做的事情，但它应该足够灵活。计划不应该引导你，而是你来引导计划。</p>
+
+                <div class="animal-grid">
+                    <div class="animal-block elephant" data-animal="elephant">大象</div>
+                    <div class="animal-block beaver" data-animal="beaver">河狸</div>
+                    <div class="animal-block owl" data-animal="owl">猫头鹰</div>
+                    <div class="animal-block dolphin" data-animal="dolphin">海豚</div>
+                    <div class="animal-block bookworm" data-animal="bookworm">书虫</div>
+                    <div class="animal-block bees" data-animal="bees">蜜蜂</div>
+                </div>
+
+                <p>我在使用这些动物分类时，会牢记以下几点：</p>
+                <ol class="rules">
+                    <li>我每天应该至少完成 3 种动物。</li>
+                    <li>我应该在每一个新的一天都对这些动物进行优先排序，这样我就能大致了解什么更紧迫，但无论如何，规则 1 仍然适用。</li>
+                    <li>有些动物可能比其他的需要更长时间，这很正常。</li>
+                    <li>有些任务可能属于多种动物。这很正常。完成该任务也意味着完成了多个动物。</li>
+                    <li>如果一项任务不属于这些类别中的任何一个动物，那它就不应该被看为一个任务。</li>
+                </ol>
+            </div>
+
+            <div class="subsection">
+                <h3 class="sub-heading">一张桌子</h3>
+                <img src="../table.png" alt="A table" style="width:260px; display:block; margin:16px auto 0; transform:rotate(-2deg);">
+            </div>
+        </section>
+
+        <footer>
+            <p>© Runbao Du 2026 · built with HTML &amp; CSS · hosted on GitHub Pages</p>
+        </footer>
+    </main>
+
+    <!-- Popup overlay for animal blocks -->
+    <div class="popup-overlay" id="popupOverlay">
+        <div class="popup-content">
+            <span class="popup-close">&times;</span>
+            <h2 class="popup-title" id="popupTitle"></h2>
+            <p class="popup-description" id="popupDescription"></p>
+        </div>
+    </div>
+
+    <!-- Three.js for STL viewer -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/STLLoader.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+    <script src="../script.js"></script>
+</body>
+</html>
