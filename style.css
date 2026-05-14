@@ -90,6 +90,36 @@ em {
     color: #ffffff;
 }
 
+.lang-toggle {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-left: 12px;
+    padding-left: 20px;
+    border-left: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.lang-toggle .lang {
+    font-family: 'Fraunces', serif;
+    font-size: 13px;
+    color: #888888;
+    border: none;
+    letter-spacing: 0.02em;
+}
+
+.lang-toggle .lang.active {
+    color: #ffffff;
+}
+
+.lang-toggle .lang:hover {
+    color: #ffffff;
+}
+
+.lang-divider {
+    color: #555555;
+    font-size: 13px;
+}
+
 /* ---------- Main layout ---------- */
 main {
     max-width: 760px;
