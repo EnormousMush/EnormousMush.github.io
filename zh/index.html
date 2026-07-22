@@ -53,6 +53,7 @@
                 <p class="contact-line">
                     <span class="label">邮箱</span> &nbsp;runbao (at) uchicago (dot) edu<br>
                     <a href="../cv-zh.pdf" target="_blank" rel="noopener noreferrer"><span class="label">个人简历</span></a>
+                    最后更新：2026 年 4 月
                 </p>
             </div>
         </section>
@@ -62,18 +63,26 @@
             <h2 class="section-heading">科研</h2>
 
             <div class="item">
-                <h3 class="item-title">大语言模型的价值推理 <span class="item-date">正在进行</span></h3>
-                <p>参与 SUPERGroup 实验室的有关大语言模型的价值推理体系的研究。</p>
+                <h3 class="item-title">开源音乐生成模型：MuseV2 <span class="item-date">正在进行</span></h3>
+                <p>与<a href="https://nlp.fudan.edu.cn/main.htm" target="_blank" rel="noopener noreferrer">复旦大学自然语言处理实验室</a>从零搭建一个可控的文本生成音乐大模型。目前正在进行数据准备工作。已构建一个确定性的级联 / DAG 采样器，可在 17 个曲风大类 / 99 个子风格中生成结构化的歌曲规格，各字段覆盖均衡且彼此条件依赖。</p>
             </div>
 
             <div class="item">
-                <h3 class="item-title">有关 AI 生成音乐的独立科研 <span class="item-date">正在进行</span></h3>
-                <p>探索并寻找 AI 生成音乐中独有的信息特征。导师：<a href="https://www.blaseur.com/" target="_blank" rel="noopener noreferrer">Prof. Blase Ur</a>。</p>
-                <p><a href="../proposal1.pdf" target="_blank" rel="noopener noreferrer" class="external">项目提案 →</a></p>
+                <h3 class="item-title">AI 音乐检测的对抗性分析与「人性」的边界 <span class="item-date">正在进行</span></h3>
+                <p>构建一个严谨、去混淆的 AI 生成音乐检测器（针对 Suno 及其他模型），并通过「生成器–检测器」的对抗循环来探究：哪些「机器制造」音乐的特征只是可被抹去的表层痕迹，哪些是难以去除的深层指纹。指导：复旦大学 Qile He。导师：<a href="https://www.blaseur.com/" target="_blank" rel="noopener noreferrer">Prof. Blase Ur</a>。</p>
             </div>
 
             <div class="item">
-                <h3 class="item-title">芝加哥大学数学导读项目 <span class="item-date">2025–2026</span></h3>
+                <h3 class="item-title">价值负载的角色描述对大语言模型价值推断与任务完成的影响 <span class="item-date">2025 年 11 月 – 2026 年 5 月</span></h3>
+                <p>在芝加哥大学 SUPERGroup 实验室研究大语言模型中的价值推理。</p>
+                <details class="abstract-toggle">
+                    <summary>摘要</summary>
+                    <p>人们越来越多地把日常任务（比如修改邮件、征求推荐建议）交给大语言模型（LLM）来完成。由于完成这些任务时隐含的许多决策都反映了人的价值观，我们想知道：一段简短的用户自我描述（persona / 角色设定）会在多大程度上影响 LLM 完成任务的方式。在第一个实验中，我们研究了 LLM 所推断出的价值观——我们测试的八个 LLM 从这 33 个角色设定中共推断出 2,583 个不同的价值观，并将其归纳为 162 个聚类。在第二个实验中，我们测试了这些角色设定如何影响八个 LLM 完成 33 项任务的方式。我们发现，几乎任何角色设定——即使看似与任务无关——都会改变 LLM 完成任务的方式；而与任务相关的角色设定造成的改变更大。换句话说，即使只是几句暗示特定价值观的话，也能让 LLM 以截然不同的方式完成同一项任务，这在个性化与刻板印象之间形成了张力。</p>
+                </details>
+            </div>
+
+            <div class="item">
+                <h3 class="item-title">芝加哥大学数学导读项目 <span class="item-date">2025 年 8 月 – 2026 年 1 月</span></h3>
                 <p>学习代数几何以及其中有关椭圆曲线的内容，特别围绕椭圆素性测试的算法及证明。主要教材：Silverman， <em>The Arithmetic of Elliptic Curves</em> 。</p>
                 <p><a href="../drp.pdf" target="_blank" rel="noopener noreferrer" class="external">报告幻灯片 →</a></p>
             </div>
@@ -84,13 +93,24 @@
             <h2 class="section-heading">项目</h2>
 
             <div class="item">
-                <h3 class="item-title">Lyra <span class="item-date">正在进行</span></h3>
+                <h3 class="item-title">Audit Copilot — 面向多轨音频数据集的 LLM 智能体 <span class="item-date">2026 年 5 月 – 2026 年 7 月</span></h3>
+                <p>参与搭建 Audit Copilot——一个为<a href="https://faculty.fudan.edu.cn/weilics/zh_CN/zdylm/644067/list/index.htm" target="_blank" rel="noopener noreferrer">复旦大学音频与音乐技术实验室</a>打造的内部 LLM 智能体工具，目标是为音乐生成模型整理一个大规模的中文流行音乐多轨数据集（人声、分轨、MIDI、混音工程文件）。它把过去审核人员对每首歌都要手动完成、耗时数小时的质检流程（文件命名、结构、格式、对齐、编排检查）自动化，用一个 LLM 智能体驱动 17 个状态的 SOP，并在需要主观判断（混音、速度、结构）时把控制权交回给人。我主要负责重新设计智能体系统提示词中 Phase-B 的人机协同 SOP，并精简了整个工作流。</p>
+            </div>
+
+            <div class="item">
+                <h3 class="item-title">诗宇 Shiyu — 一个可交互的三维诗歌宇宙 <span class="item-date">2026 年 5 月 – 2026 年 7 月</span></h3>
+                <p>诗歌不该被困在一个列表里。它应该拥有轨道、速度与引力。</p>
+                <p><a href="https://shiyu.appmiaoda.com" target="_blank" rel="noopener noreferrer">shiyu.com</a></p>
+            </div>
+
+            <div class="item">
+                <h3 class="item-title">Lyra：文字-音乐聊天机器人 <span class="item-date">2026 年 1 月 – 2026 年 5 月</span></h3>
                 <p>独立搭建并上线 AI 音乐平台：用户上传歌曲后可与大模型对话，系统通过自研 Python 音频分析 Pipeline 提取特征，并调用 Claude和Google Gemini 图像模型实时生成可视化场景。</p>
                 <p style="font-family: 'JetBrains Mono', monospace; font-size: 13px; font-weight: 300;">如要尝试Lyra 1.1，请联系润宝。</p>
             </div>
 
             <div class="item">
-                <h3 class="item-title">Prezuricle — 市场宣传工具 <span class="item-date">2023–2024</span></h3>
+                <h3 class="item-title">Prezuricle — 市场宣传工具 <span class="item-date">2023 年 8 月 – 2024 年 5 月</span></h3>
                 <p>与 <a href="https://www.linkedin.com/in/%E5%90%AF%E6%B7%B3-%E8%B5%B5-46800621a/" target="_blank" rel="noopener noreferrer">Jason Zhao</a> (USC '27) 共同搭建一个调用多个大模型 API 的多模态工具，主要负责文字与音频、文字与图像等之间的转换。</p>
                 <p><a href="https://prezuricle.com" target="_blank" rel="noopener noreferrer" class="external">prezuricle.com →</a></p>
             </div>
@@ -171,7 +191,7 @@
         </section>
 
         <footer>
-            <p>© Runbao Du 2026 · built with HTML &amp; CSS · hosted on GitHub Pages</p>
+            <p>© Runbao Du 2026 · hosted on GitHub Pages</p>
         </footer>
     </main>
 
