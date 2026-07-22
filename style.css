@@ -276,6 +276,53 @@ main {
     font-style: italic;
 }
 
+/* ---------- Abstract toggle ---------- */
+.abstract-toggle {
+    margin-top: 4px;
+}
+
+.abstract-toggle summary {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px;
+    font-weight: 300;
+    color: #888888;
+    cursor: pointer;
+    list-style: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    width: fit-content;
+    transition: color 0.2s ease;
+}
+
+.abstract-toggle summary::-webkit-details-marker {
+    display: none;
+}
+
+.abstract-toggle summary::before {
+    content: '▸';
+    font-size: 10px;
+    transition: transform 0.15s ease;
+}
+
+.abstract-toggle[open] summary::before {
+    transform: rotate(90deg);
+}
+
+.abstract-toggle summary:hover {
+    color: #ffffff;
+}
+
+.abstract-toggle p {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 1.7;
+    color: rgba(209, 208, 197, 0.8);
+    margin-top: 12px;
+    margin-bottom: 0;
+}
+
 /* ---------- Music section ---------- */
 #stl-viewer {
     width: 100%;
