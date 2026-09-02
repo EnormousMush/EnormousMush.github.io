@@ -342,6 +342,33 @@ main {
     border: 1px solid rgba(255, 255, 255, 0.08);
 }
 
+/* ---------- Clickable preview thumbnails ---------- */
+.thumb-link {
+    display: block;
+    border: none;
+    margin: 14px 0;
+    line-height: 0;
+}
+
+.thumb-link:hover {
+    border: none;
+}
+
+.thumb {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    background: #111;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    transition: opacity 0.2s ease, border-color 0.2s ease;
+}
+
+.thumb-link:hover .thumb {
+    opacity: 0.85;
+    border-color: rgba(255, 255, 255, 0.25);
+}
+
 /* ---------- Music section ---------- */
 #stl-viewer {
     width: 100%;
