@@ -276,14 +276,12 @@ main {
     font-style: italic;
 }
 
-/* ---------- Toggles (abstract / video) ---------- */
-.abstract-toggle,
-.video-toggle {
+/* ---------- Abstract toggle ---------- */
+.abstract-toggle {
     margin-top: 4px;
 }
 
-.abstract-toggle summary,
-.video-toggle summary {
+.abstract-toggle summary {
     font-family: 'JetBrains Mono', monospace;
     font-size: 13px;
     font-weight: 300;
@@ -297,25 +295,21 @@ main {
     transition: color 0.2s ease;
 }
 
-.abstract-toggle summary::-webkit-details-marker,
-.video-toggle summary::-webkit-details-marker {
+.abstract-toggle summary::-webkit-details-marker {
     display: none;
 }
 
-.abstract-toggle summary::before,
-.video-toggle summary::before {
+.abstract-toggle summary::before {
     content: '▸';
     font-size: 10px;
     transition: transform 0.15s ease;
 }
 
-.abstract-toggle[open] summary::before,
-.video-toggle[open] summary::before {
+.abstract-toggle[open] summary::before {
     transform: rotate(90deg);
 }
 
-.abstract-toggle summary:hover,
-.video-toggle summary:hover {
+.abstract-toggle summary:hover {
     color: #ffffff;
 }
 
