@@ -325,11 +325,17 @@ main {
 
 /* ---------- Award line ---------- */
 .award-line {
-    font-family: 'Instrument Serif', serif;
-    font-style: italic;
-    font-size: 18px;
-    color: #d1d0c5;
-    margin-top: 6px;
+    display: inline-block;
+    font-family: 'Fraunces', Georgia, serif;
+    font-style: normal;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #dcc07f;
+    background: rgba(220, 192, 127, 0.09);
+    border: 1px solid rgba(220, 192, 127, 0.22);
+    border-radius: 999px;
+    padding: 7px 18px;
+    margin-top: 10px;
 }
 
 /* ---------- Project video ---------- */
