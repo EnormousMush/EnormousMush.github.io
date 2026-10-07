@@ -139,17 +139,13 @@ document.addEventListener('keydown', (e) => {
 
     camera.position.z = 100;
 
+    // Decorative footer logo: spins on its own, ignores pointer input
     const controls = new THREE.OrbitControls(camera, renderer.domElement);
-    controls.enableDamping = true;
-    controls.dampingFactor = 0.05;
+    controls.enabled = false;
     controls.enableZoom = false;
     controls.enablePan = false;
     controls.autoRotate = true;
-    controls.autoRotateSpeed = 2;
-
-    container.addEventListener('pointerdown', () => {
-        controls.autoRotate = false;
-    });
+    controls.autoRotateSpeed = 0.7;
 
     resize();
     window.addEventListener('resize', resize);

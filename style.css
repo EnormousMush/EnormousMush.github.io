@@ -375,37 +375,12 @@ main {
     border-color: rgba(255, 255, 255, 0.25);
 }
 
-/* ---------- Music section ---------- */
+/* ---------- Footer logo (rotating STL) ---------- */
 #stl-viewer {
-    width: 100%;
-    max-width: 500px;
+    width: 76px;
     aspect-ratio: 1 / 1;
-    background: #0a0a0a;
-    margin: 0 auto 40px;
-}
-
-.music-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
-    margin-bottom: 32px;
-}
-
-.sc-player {
-    background: #111;
-    border-radius: 8px;
-    overflow: hidden;
-}
-
-.sc-player iframe {
-    display: block;
-    height: 200px;
-}
-
-.link-row {
-    display: flex;
-    gap: 24px;
-    flex-wrap: wrap;
+    margin: 0 auto 14px;
+    pointer-events: none;
 }
 
 /* ---------- Whatnot links ---------- */
@@ -610,9 +585,6 @@ footer p {
         margin: 0 auto;
     }
 
-    .music-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
 
     .animal-grid {
         grid-template-columns: repeat(2, 1fr);
