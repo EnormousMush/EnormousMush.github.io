@@ -225,6 +225,38 @@ main {
     filter: saturate(0.9);
 }
 
+/* ---------- Research group headings & citations ---------- */
+.group-heading {
+    font-family: 'Instrument Serif', serif;
+    font-size: 24px;
+    font-weight: 400;
+    color: #ffffff;
+    letter-spacing: -0.005em;
+    margin: 0 0 26px;
+}
+
+.item + .group-heading {
+    margin-top: 52px;
+}
+
+.citation {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #d1d0c5;
+    margin-bottom: 10px;
+}
+
+.citation strong {
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.citation .status {
+    font-family: 'Instrument Serif', serif;
+    font-style: italic;
+    color: #9a9a9a;
+}
+
 /* ---------- Item cards (Research, Build) ---------- */
 .item {
     margin-bottom: 36px;
