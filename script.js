@@ -1,4 +1,28 @@
-/* ============ Animal popup ============ */
+/* ============ Section tabs ============ */
+(function initTabs() {
+    const sections = document.querySelectorAll('main > .section');
+    if (!sections.length) return;
+    document.body.classList.add('tabbed');
+
+    function show(id) {
+        let target = null;
+        sections.forEach(s => { if (s.id === id) target = s; });
+        if (!target) { target = sections[0]; id = target.id; }
+        sections.forEach(s => s.classList.toggle('active', s === target));
+        document.querySelectorAll('.nav-links a[href^="#"]').forEach(a => {
+            a.classList.toggle('active-tab', a.getAttribute('href') === '#' + id);
+        });
+        // keep the language toggle pointing at the same tab
+        document.querySelectorAll('.lang-toggle .lang').forEach(a => {
+            a.href = a.href.split('#')[0] + '#' + id;
+        });
+        window.scrollTo(0, 0);
+    }
+
+    window.addEventListener('hashchange', () => show(location.hash.slice(1)));
+    show(location.hash.slice(1));
+})();
+
 /* ============ Animal popup ============ */
 const animalDataEN = {
     elephant: {
@@ -119,9 +143,9 @@ document.addEventListener('keydown', (e) => {
         'https://dl.dropboxusercontent.com/scl/fi/t0i3fnsmpq8z92l1pljzk/V1.stl?rlkey=hn7m7ke4f7jg5fucjsgk2lfqg&st=lom8b1r7',
         (geometry) => {
             const material = new THREE.MeshPhongMaterial({
-                color: 0xcccccc,
-                specular: 0x111111,
-                shininess: 50
+                color: 0x3a3a3a,
+                specular: 0x222222,
+                shininess: 40
             });
             const mesh = new THREE.Mesh(geometry, material);
             geometry.center();
