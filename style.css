@@ -355,14 +355,6 @@ a.contact-item:hover {
     font-size: 14px;
 }
 
-/* ---------- Footer logo (rotating STL) ---------- */
-#stl-viewer {
-    width: 76px;
-    aspect-ratio: 1 / 1;
-    margin: 0 auto 10px;
-    pointer-events: none;
-}
-
 /* ---------- Project video ---------- */
 .project-video {
     display: block;
