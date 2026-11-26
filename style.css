@@ -55,7 +55,7 @@ em {
     margin: 0 auto;
     padding: 13px 40px;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
 }
 
@@ -266,6 +266,12 @@ body.tabbed .section.active {
 
 .about-text {
     max-width: 700px;
+}
+
+#about .hero-row,
+#about .about-text {
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .about-text p {
