@@ -209,7 +209,7 @@ body.tabbed .section.active {
 /* ---------- About ---------- */
 .hero-row {
     display: grid;
-    grid-template-columns: 1fr 150px;
+    grid-template-columns: 1fr 230px;
     gap: 36px;
     align-items: center;
     margin-bottom: 24px;
@@ -628,7 +628,7 @@ footer p {
     }
 
     .hero-photo {
-        max-width: 180px;
+        max-width: 240px;
         margin: 0 auto;
     }
 
