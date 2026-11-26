@@ -55,20 +55,8 @@ em {
     margin: 0 auto;
     padding: 13px 40px;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
-}
-
-.logo {
-    font-family: 'Instrument Serif', serif;
-    font-size: 19px;
-    color: #150f13;
-    border: none;
-    letter-spacing: 0.02em;
-}
-
-.logo:hover {
-    color: #555555;
 }
 
 .nav-links {
@@ -617,9 +605,6 @@ footer p {
         font-size: 13px;
     }
 
-    .logo {
-        font-size: 17px;
-    }
 
     .chinese-name {
         font-size: 44px;
@@ -670,9 +655,6 @@ footer p {
         font-size: 12px;
     }
 
-    .logo {
-        font-size: 14px;
-    }
 
     .lang-toggle {
         margin-left: 2px;
