@@ -484,92 +484,6 @@ a.contact-item:hover {
     margin-bottom: 12px;
 }
 
-/* ---------- Animal grid ---------- */
-.animal-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 8px;
-    margin: 20px 0 0;
-}
-
-.animal-block {
-    font-family: 'Instrument Serif', serif;
-    font-size: 20px;
-    padding: 22px 12px;
-    text-align: center;
-    cursor: pointer;
-    border-radius: 4px;
-    transition: transform 0.15s ease, opacity 0.15s ease;
-    user-select: none;
-}
-
-.animal-block:hover {
-    transform: scale(1.02);
-    opacity: 0.92;
-}
-
-.elephant { background: #c41e2a; color: #ffffff; }
-.beaver   { background: #f5d000; color: #150f13; }
-.owl      { background: #00c853; color: #150f13; }
-.dolphin  { background: #7c4dff; color: #ffffff; }
-.bookworm { background: #64b5f6; color: #150f13; }
-.bees     { background: #1a1a1a; color: #ffffff; }
-
-/* ---------- Popup ---------- */
-.popup-overlay {
-    display: none;
-    position: fixed;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.45);
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
-    padding: 20px;
-}
-
-.popup-overlay.active {
-    display: flex;
-}
-
-.popup-content {
-    background: #fffdfe;
-    padding: 36px;
-    border-radius: 6px;
-    max-width: 460px;
-    width: 100%;
-    position: relative;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    box-shadow: 0 16px 48px rgba(0, 0, 0, 0.18);
-}
-
-.popup-close {
-    position: absolute;
-    top: 10px;
-    right: 16px;
-    font-size: 30px;
-    color: #999999;
-    cursor: pointer;
-    line-height: 1;
-}
-
-.popup-close:hover {
-    color: #150f13;
-}
-
-.popup-title {
-    font-family: 'Instrument Serif', serif;
-    font-size: 28px;
-    font-weight: 400;
-    color: #150f13;
-    margin-bottom: 12px;
-}
-
-.popup-description {
-    color: #444444;
-    font-size: 15px;
-    line-height: 1.7;
-}
-
 /* ---------- Footer ---------- */
 footer {
     text-align: center;
@@ -643,15 +557,6 @@ footer p {
 
     .hero-photo img {
         height: auto;
-    }
-
-    .animal-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .animal-block {
-        font-size: 20px;
-        padding: 24px 12px;
     }
 }
 
